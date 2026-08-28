@@ -163,46 +163,53 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-subtitle">
-        Parlez-nous de vos besoins en systèmes embarqués, électronique ou virtualisation. Nous vous répondrons rapidement.
-      </p>
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p class="section-subtitle">
+    Parlez-nous de vos besoins en systèmes embarqués, électronique ou virtualisation. Nous vous répondrons rapidement.
+  </p>
 
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Coordonnées</h3>
-          <p><strong>Marc Bastien</strong></p>
-          <p>Email : <a href="mailto:mbastien170@gmail.com">mbastien170@gmail.com</a></p>
-          <p>Téléphone : <a href="tel:18196097148">819-609-7148</a></p>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Coordonnées</h3>
+      <p><strong>Marc Bastien</strong></p>
+      <p>Email : <a href="mailto:mbastien170@gmail.com">mbastien170@gmail.com</a></p>
+      <p>Téléphone : <a href="tel:18196097148">819-609-7148</a></p>
 
-          <p style="margin-top:0.8rem;"><strong>Yves Poirier</strong></p>
-          <p class="contact-muted">Coordonnées disponibles sur demande.</p>
+      <p style="margin-top:0.8rem;"><strong>Yves Poirier</strong></p>
+      <p class="contact-muted">Coordonnées disponibles sur demande.</p>
 
-          <p style="margin-top:0.8rem;"><strong>Sylvain Doucet</strong></p>
-          <p class="contact-muted">Coordonnées disponibles sur demande.</p>
+      <p style="margin-top:0.8rem;"><strong>Sylvain Doucet</strong></p>
+      <p class="contact-muted">Coordonnées disponibles sur demande.</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Formulaire de contact</h3>
+
+      <!-- FORMULAIRE MODIFIÉ POUR ENVOI VERS DUCKDNS -->
+      <form class="contact-form" action="https://symtechnologies.duckdns.org/contact.php" method="POST">
+
+        <div class="field">
+          <label for="name">Nom</label>
+          <input id="name" type="text" name="name" placeholder="Votre nom" required>
         </div>
 
-        <div class="contact-card">
-          <h3>Formulaire de contact</h3>
-          <form class="contact-form">
-            <div class="field">
-              <label for="name">Nom</label>
-              <input id="name" type="text" name="name" placeholder="Votre nom" />
-            </div>
-            <div class="field">
-              <label for="email">Courriel</label>
-              <input id="email" type="email" name="email" placeholder="vous@exemple.com" />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Décrivez brièvement votre projet ou votre besoin."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
-          </form>
+        <div class="field">
+          <label for="email">Courriel</label>
+          <input id="email" type="email" name="email" placeholder="vous@exemple.com" required>
         </div>
-      </div>
-    </section>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Décrivez brièvement votre projet ou votre besoin." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <footer>
